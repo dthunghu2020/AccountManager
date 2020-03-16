@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLiteBlue"
+    android:minWidth="@dimen/_250sdp"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Edit Transaction"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Credit Amount" />
+
+    <EditText
+        android:id="@+id/edtEditCreditAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conner_bg"
+        android:inputType="number"
+        android:padding="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Debit Amount" />
+
+    <EditText
+        android:id="@+id/edtEditDebitAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="@drawable/conner_bg"
+        android:padding="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Date" />
+
+    <EditText
+        android:id="@+id/edtEditDate"
+        android:clickable="true"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conner_bg"
+        android:padding="@dimen/_10sdp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Time" />
+
+    <EditText
+        android:id="@+id/edtEditTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conner_bg"
+        android:padding="@dimen/_10sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Note" />
+
+    <EditText
+        android:id="@+id/edtEditNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/conner_bg"
+        android:padding="@dimen/_10sdp" />
+
+    <Button
+        android:id="@+id/btnEditTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/conner_bg"
+        android:backgroundTint="@color/colorGreen"
+        android:text="Edit"
+        android:textColor="@color/colorWhite" />
+    <Button
+        android:id="@+id/btnDeleteTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/conner_bg"
+        android:backgroundTint="@color/colorGreen"
+        android:text="Delete"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>

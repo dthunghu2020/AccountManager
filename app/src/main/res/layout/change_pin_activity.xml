@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.LoginActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:src="@drawable/ic_pin" />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="cursive"
+        android:text="USER NAME"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Enter Old Pin" />
+
+    <EditText
+        android:id="@+id/edtOldPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/conner_bg"
+        android:inputType="numberPassword"
+        android:padding="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/txtConFirmPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Enter New Pin" />
+
+    <EditText
+        android:id="@+id/edtNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/conner_bg"
+        android:inputType="numberPassword"
+        android:padding="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/txtEnterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Confirm New Pin" />
+
+    <EditText
+        android:id="@+id/edtConfirmNewPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:inputType="numberPassword"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/conner_bg"
+        android:padding="@dimen/_10sdp" />
+
+
+
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/conner_bg"
+        android:backgroundTint="@color/colorLiteBlue"
+        android:text="DONE" />
+
+</LinearLayout>
