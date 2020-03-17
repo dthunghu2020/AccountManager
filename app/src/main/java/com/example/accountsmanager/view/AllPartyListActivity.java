@@ -67,7 +67,6 @@ public class AllPartyListActivity extends AppCompatActivity {
             public void onClick(View view) {
                 parties.clear();
                 parties.addAll(DBHelper.getInstance(AllPartyListActivity.this).searchParty(edtSearch.getText().toString()));
-                Toast.makeText(AllPartyListActivity.this, "click" + parties.size(), Toast.LENGTH_SHORT).show();
                 PLAdapter.notifyDataSetChanged();
             }
         });
